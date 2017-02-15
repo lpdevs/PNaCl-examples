@@ -1,0 +1,19 @@
+{
+  "files": {},
+  "program": {
+    "portable": {
+		"pnacl-translate": {
+			"url": "newLib/Debug/hello-world-2.pexe"
+		}
+	},
+    "x86-64": {
+      "url": "newlib/Debug/hello-world-2_64.nexe"
+    },
+    "arm": {
+      "url": "newlib/Debug/hello-world-2_arm.nexe"
+    },
+    "x86-32": {
+      "url": "newlib/Debug/hello-world-2_32.nexe"
+    }
+  }
+}
