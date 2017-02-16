@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <!--
+  Copyright (c) 2013 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+  -->
+<head>
+  <title>dlopen-load-class</title>
+  <script src="common.js" type"text/javascript"></script>
+</head>
+
+<body>
+
+  <h1>NaCl C++ Tutorial: Getting Started</h1>
+  <p>
+    <!--
+    Load the published pexe.
+    Note: Since this module does not use any real-estate in the browser, its
+    width and height are set to 0.
+
+    Note: The <embed> element is wrapped inside a <div>, which has both a 'load'
+    and a 'message' event listener attached.  This wrapping method is used
+    instead of attaching the event listeners directly to the <embed> element to
+    ensure that the listeners are active before the NaCl module 'load' event
+    fires.  This also allows you to use PPB_Messaging.PostMessage() (in C) or
+    pp::Instance.PostMessage() (in C++) from within the initialization code in
+    your module.
+    -->
+    <div id="listener">
+      <embed id="dlopen-load-class"
+             width=0 height=0
+             src="glibc/Release/dlopen.nmf"
+             type="application/x-nacl" />
+    </div>
+  </p>
+
+  <h2>Status <code id="statusField">NO-STATUS</code></h2>
+</body>
+</html>
