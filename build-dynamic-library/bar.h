@@ -20,3 +20,4 @@ class BarFactory : PluginFactory
 BarFactory gBarFactory;
 
 #endif
+
