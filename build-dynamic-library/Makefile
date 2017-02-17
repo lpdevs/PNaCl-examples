@@ -26,3 +26,4 @@ $(foreach src,$(bar_SOURCES),$(eval $(call COMPILE_RULE,$(src),$(bar_CFLAGS))))
 # The PNaCl workflow uses both an unstripped and finalized/stripped binary.
 # On NaCl, only produce a stripped binary for Release configs (not Debug).
 $(eval $(call SO_RULE,bar,$(bar_SOURCES),,,1))
+
