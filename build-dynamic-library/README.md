@@ -15,4 +15,3 @@
 
   * I will copy all library files (libbar_arm.so, libbar_x86_32.so and libbar_x86_64.so) in **deps/Release** to project [dlopen-load-class-2] for testing.
   
-  
