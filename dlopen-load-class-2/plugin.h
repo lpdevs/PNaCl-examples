@@ -5,7 +5,7 @@ class Plugin
 {
     public:
         // default constructor
-        // virtual void test() { };
+        virtual void test() { };
         virtual ~Plugin() {};
 };
 
