@@ -23,3 +23,4 @@ Bar* BarFactory::getInstance()
 	cout << "	Making Bar [Bar.cc BarFactory::getInstance()]" << endl;  
 	return new Bar; 
 }
+
